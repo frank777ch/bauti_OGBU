@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'features/qr_reader/widgets/section1.dart';
-import 'features/qr_reader/widgets/section2.dart';
+import 'features/qr_reader/qr_reader_main.dart';
+import 'features/ticket_data/ticket_data_main.dart';
 
 void main() {
   runApp(const BautiApp());
@@ -14,14 +14,10 @@ class BautiApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bauti App',
       home: Scaffold(
-        /* appBar: AppBar(
-          title: const Text("Baje de Mauricio"),
-          backgroundColor: Colors.purple,
-        ), */
         body: const Column(
           children: [
-            Expanded(flex: 2, child: Section1()),
-            Expanded(flex: 3, child: Section2()),
+            Expanded(flex: 2, child: QRReaderMain()),
+            Expanded(flex: 3, child: TicketDataMain()),
           ],
         ),
       ),

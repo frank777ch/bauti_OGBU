@@ -3,7 +3,7 @@ import 'package:permission_handler/permission_handler.dart';
 class CameraPermissionService {
 
   static Future<PermissionStatus> status() async {
-    return await Permission.camera.status;
+    return Permission.camera.status;
   }
 
   static Future<bool> request() async {
