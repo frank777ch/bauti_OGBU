@@ -12,7 +12,7 @@ class BautiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bauti App',
+      title: 'Bauti App OGBU',
       home: Scaffold(
         body: const Column(
           children: [
